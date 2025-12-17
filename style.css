@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+     background: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4MS1rcHhrOWs1Zi5qcGc.jpg")
+        no-repeat center center/cover;
+}
+
+/* MAIN SPLIT LAYOUT */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+    height: 100vh;
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;
+    padding-left: 200px;       /* vertical */
+}
+
+/* LOGIN BOX */
+.login-box {
+    
+    width: 320px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE IMAGE */
+
+/* HOME PAGE */
+.hidden {
+    display: none;
+}
+
+.home {
+    padding: 40px;
+    background: url("https://img.freepik.com/premium-vector/back-school-blackboard-with-chalk-drawings-copy-space-horizontal-banner_687448-24.jpg")
+        no-repeat center center/cover;
+    min-height: 100vh;
+    color: rgb(0, 0, 0);
+
+}
+
+.home-cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+}
+/* HEADER LAYOUT */
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;              /* space between image and text */
+}
+
+/* LOGO IMAGE */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* TEXT + BUTTONS CONTAINER */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* BUTTON ROW */
+.tabs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;        /* prevents overflow on small screens */
+}
+
+/* BUTTON STYLE (AUTO SIZE) */
+.tab {
+    background: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    white-space: nowrap;   /* keeps text in one line */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
